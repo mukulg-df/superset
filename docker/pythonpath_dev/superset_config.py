@@ -110,7 +110,17 @@ WEBDRIVER_BASEURL = "http://superset:8088/"
 WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
-
+WTF_CSRF_ENABLED = False
+GUEST_ROLE_NAME = "Gamma"
+SESSION_COOKIE_SAMESITE = None
+ENABLE_PROXY_FIX = True
+PUBLIC_ROLE_LIKE_GAMMA = True
+CORS_OPTIONS = {
+  'supports_credentials': True,
+  'allow_headers': ['*'],
+  'resources':['*'],
+  'origins': ['*']
+  }
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
